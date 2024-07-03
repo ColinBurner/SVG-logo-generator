@@ -45,7 +45,7 @@ This project is licensed under the MIT license. For more information, please vis
 N/A
 
 ## Roadmap
-This application is complete.
+More shapes could be added in the future.
 
 ## Tests
 To run a test on circle, square or triangle (the only currently available shape options) simply run npm test in your terminal.
