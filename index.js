@@ -30,10 +30,20 @@ const questions = [
 inquirer.prompt(questions).then(answers => {
   const { text, textColor, shape, shapeColor } = answers;
   let shapeInstance;
+  let textPosition = {
+    x: '150',
+    y: '125',
+    fontSize: '60',
+  };
 
   switch (shape) {
     case 'Triangle':
       shapeInstance = new Triangle();
+      textPosition = {
+        x: '150',
+        y: '150',
+        fontSize: '30',
+      };
       break;
     case 'Circle':
       shapeInstance = new Circle();
