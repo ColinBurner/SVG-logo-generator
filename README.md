@@ -2,7 +2,7 @@
 Repository for a CLI SVG logo generator
 
 ## Description
-This is a command line SVG logo generator. When used properly, following the command line prompts you can select up to 3 characters, a shape and colors for both the text and the shape itself to create a logo in SVG format. When finished filling out the prompts a message appears saying "generated logo.svg" and your logo.svg is created and accessible. If you open the file you will see your generated logo in a 300x200px format!
+This is a command line SVG logo generator. When used properly, following the command line prompts you can select up to 3 characters, a shape and colors for both the text and the shape itself to create a logo in SVG format. When finished filling out the prompts a message appears saying "generated logo.svg." Your logo.svg is now created and accessible. If you open the file you will see your generated logo in a 300x200px format!
 
 
 ## Table of Contents
