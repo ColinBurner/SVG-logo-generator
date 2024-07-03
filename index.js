@@ -1,7 +1,9 @@
+// Imports necessary modules and classes
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { Triangle, Circle, Square } = require('./lib/shapes');
 
+// Array of questions to prompt the user
 const questions = [
   {
     type: 'input',
@@ -27,7 +29,9 @@ const questions = [
   },
 ];
 
+// Prompt the user with questions and handle the responses
 inquirer.prompt(questions).then(answers => {
+    // Destructure the answers object
   const { text, textColor, shape, shapeColor } = answers;
   let shapeInstance;
   let textPosition = {
@@ -36,6 +40,7 @@ inquirer.prompt(questions).then(answers => {
     fontSize: '60',
   };
 
+  // Create an instance of the selected shape and adjust text position if necessary
   switch (shape) {
     case 'Triangle':
       shapeInstance = new Triangle();
@@ -52,8 +57,10 @@ inquirer.prompt(questions).then(answers => {
       break;
   }
 
+  // Set the color of the shape
   shapeInstance.setColor(shapeColor);
 
+  // Create the SVG content with the shape and text
   const svgContent = `
     <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
       ${shapeInstance.render()}
@@ -61,6 +68,7 @@ inquirer.prompt(questions).then(answers => {
     </svg>
   `;
 
+  // Write the SVG content to a file
   fs.writeFileSync('logo.svg', svgContent.trim());
   console.log('Generated logo.svg');
 });
