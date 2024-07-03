@@ -42,7 +42,6 @@ inquirer.prompt(questions).then(answers => {
       textPosition = {
         x: '150',
         y: '150',
-        fontSize: '30',
       };
       break;
     case 'Circle':
