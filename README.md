@@ -2,7 +2,7 @@
 Repository for a CLI SVG logo generator
 
 ## Description
-This is a command line SVG logo generator. When used properly, following the command line prompts you can select your 3 characters, shape and colors for both the text and the shape itself to create a logo in SVG format.
+This is a command line SVG logo generator. When used properly, following the command line prompts you can select up to 3 characters, a shape and colors for both the text and the shape itself to create a logo in SVG format. When finished filling out the prompts a message appears saying "generated logo.svg" and your logo.svg is created and accessible. If you open the file you will see your generated logo in a 300x200px format!
 
 
 ## Table of Contents
@@ -17,7 +17,8 @@ This is a command line SVG logo generator. When used properly, following the com
 - [Questions](#questions)
 
 ## Installation
-**Clone the repository** || cd SVG-logo-generator || install dependencies: nmp install inquirer@8.2.4 jest
+**Clone the repository** || cd SVG-logo-generator || install dependencies: npm install inquirer@8.2.4 jest
+(jest is used for test files)
 
 ## Usage
 Once installed, run node index.js in your terminal and follow the prompts to create a brand new SVG logo! Refer to video under [Visuals](#visuals) for further usage information.
